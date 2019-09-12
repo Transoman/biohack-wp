@@ -1,0 +1,79 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  width: 100%
+  padding: 20px 0
+  +trans
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 15
+    background-color: $ebony-clay
+    animation: slideDown 0.5s ease
+    +r(992)
+      padding: 10px 0
+  &__inner
+    position: relative
+    display: flex
+    align-items: flex-end
+    border-bottom: 1px solid rgba(#D4E6FF, 0.2)
+    +r(767)
+      padding-right: 50px
+  &__logo
+    position: relative
+    padding: 0 20px 10px 0
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 1px
+      height: 40px
+      background-color: rgba(#D4E6FF, 0.2)
+  &__nav
+    margin-left: auto
+    margin-right: 260px
+    +r(1200)
+      margin-right: 150px
+    +r(992)
+      margin-right: 0
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 1px
+      height: 40px
+      background-color: rgba(#D4E6FF, 0.2)
+    &::after
+      content: ''
+      position: absolute
+      bottom: 2px
+      left: 3px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 8px 0 0 8px
+      border-color: transparent $accent
+  &__phone
+    position: relative
+    padding: 0 0 10px 40px
+    +r(767)
+      margin-left: auto
+    +r(576)
+      padding-left: 20px
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 1px
+      height: 40px
+      background-color: rgba(#D4E6FF, 0.2)
+      +r(767)
+        display: none
+        padding-left: 0

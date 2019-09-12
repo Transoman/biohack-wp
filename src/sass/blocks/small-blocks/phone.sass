@@ -1,0 +1,16 @@
+.phone
+  display: flex
+  align-items: center
+  +r(576)
+    flex-direction: column
+    text-align: right
+    align-items: stretch
+  &__tel
+    margin-right: 40px
+    font-size: 14px
+    font-weight: 500
+    white-space: nowrap
+    +r(576)
+      margin-right: 0
+    &:last-child
+      margin-right: 0

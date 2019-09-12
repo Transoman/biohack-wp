@@ -1,0 +1,101 @@
+.methods
+  padding-bottom: 40px
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  +r(992)
+    padding-bottom: 60px
+  &__show-all
+    display: none
+    padding:
+      right: 45px
+      left: 45px
+    +r(992)
+      display: inline-block
+  &__list
+    padding: 0 40px
+    +r(1500)
+      padding: 0
+
+.methods-card
+  position: relative
+  z-index: 1
+  margin-bottom: 80px
+  padding: 40px 40px 25px 120px
+  border: 2px solid $accent
+  border-radius: 40px 0 0 0
+  +trans
+  +r(1200)
+    margin-bottom: 30px
+    padding-left: 100px
+  +r(767)
+    padding: 20px
+    border-radius: 20px 0 0 0
+  &::before
+    content: ''
+    position: absolute
+    bottom: -12px
+    right: -12px
+    z-index: -1
+    width: 100%
+    height: 100%
+    border-right: 10px solid #101A2E
+    border-bottom: 10px solid #101A2E
+    +trans
+  &:hover
+    background-color: #fff
+    color: $ebony-clay
+    border-color: #fff
+    &::before
+      border-color: $accent
+    .methods-card
+      &__title
+        color: $ebony-clay
+      &__plus
+        &::before
+          animation: rotate 3s linear infinite
+  p
+    margin: 0
+  &__title
+    margin-bottom: 30px
+    font-size: 28px
+    color: $accent
+    line-height: 1.07
+    +trans
+    +r(1200)
+      font-size: 22px
+    +r(992)
+      margin-bottom: 15px
+    +r(767)
+      font-size: 20px
+  &__plus
+    position: absolute
+    top: 20px
+    left: 20px
+    width: 60px
+    height: 60px
+    //border: 4px dashed $accent
+    //border-radius: 50%
+    font-size: 36px
+    font-weight: 500
+    line-height: 60px
+    text-align: center
+    +r(1200)
+      width: 50px
+      height: 50px
+      border-width: 2px
+      line-height: 50px
+    +r(767)
+      display: none
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 1
+      border: 4px dashed $accent
+      border-radius: 50%
+      +trans

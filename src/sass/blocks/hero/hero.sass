@@ -1,0 +1,87 @@
+.hero
+  position: relative
+  padding-top: 200px
+  padding-bottom: 0
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  +r(992)
+    padding-top: 150px
+  &__inner
+    display: flex
+    align-items: flex-start
+    padding: 0 40px
+    +r(1500)
+      padding: 0
+    +r(992)
+      display: block
+  &__content
+    max-width: 760px
+    margin-right: 160px
+    +r(1500)
+      margin-right: 100px
+    +r(1200)
+      margin-right: 30px
+    +r(992)
+      max-width: none
+      margin-right: 0
+      margin-bottom: 40px
+      text-align: center
+    p
+      margin-bottom: 40px
+      font-size: 36px
+      font-weight: 500
+      line-height: 1.4
+      +r(1500)
+        font-size: 28px
+      +r(1200)
+        font-size: 24px
+        margin-bottom: 20px
+      +r(767)
+        font-size: 20px
+      &:last-of-type
+        margin-bottom: 0
+      strong
+        font-weight: 800
+  &__quote
+    position: relative
+    max-width: 680px
+    margin-top: 80px
+    padding: 40px 70px 0 40px
+    border-top: 1px solid rgba(#D4E6FF, 0.3)
+    font-size: 22px
+    font-weight: 500
+    +r(1500)
+      padding-right: 20px
+    +r(1200)
+      font-size: 18px
+      margin-top: 40px
+      padding: 20px 20px 0
+    +r(767)
+      font-size: 16px
+      padding:
+        right: 0
+        left: 0
+    &::after
+      content: ''
+      position: absolute
+      top: -1px
+      right: 0
+      z-index: 1
+      height: 2px
+      width: 80px
+      background-color: #fff
+    &::before
+      content: ''
+      position: absolute
+      top: 3px
+      left: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 10px 10px 0 0
+      border-color: $accent transparent
+  &__form-wrap
+    flex-shrink: 0
+    margin-left: auto

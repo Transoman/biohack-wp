@@ -1,0 +1,49 @@
+.portfolio
+  padding-top: 140px
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  overflow: hidden
+  +r(767)
+    padding-top: 60px
+  .section-top
+    +r(767)
+      display: block
+    .section-header
+      max-width: 620px
+      margin: 0
+      +r(767)
+        margin-bottom: 30px
+    .slider-controls
+      margin-left: auto
+      margin-top: 70px
+      padding-right: 40px
+      +r(1500)
+        padding-right: 0
+      +r(767)
+        margin-top: 0
+        justify-content: flex-end
+
+.portfolio-slider
+  overflow: visible
+  padding-left: 40px
+  +r(1200)
+    padding-left: 0
+  .swiper-wrapper
+    overflow: visible
+  &__title
+    margin-bottom: 10px
+    font-size: 24px
+    font-weight: 700
+    +r(1200)
+      font-size: 20px
+    +r(767)
+      margin-bottom: 5px
+  &__media
+    margin-bottom: 20px
+  &__city
+    font-size: 20px
+    font-weight: 500
+    +r(1200)
+      font-size: 16px

@@ -1,0 +1,68 @@
+.countries
+  margin-top: 100px
+  //padding: 40px 0
+  background: rgba(112, 112, 112, 0.25)
+  backdrop-filter: blur(25px)
+  +r(1200)
+    margin-top: 50px
+  &__inner
+    position: relative
+    display: flex
+    padding: 40px
+    +r(1500)
+      padding: 40px 0
+    +r(767)
+      display: block
+      padding-bottom: 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 80px
+      height: 2px
+      background-color: $accent
+  &__content
+    width: 100%
+    max-width: 290px
+    flex-shrink: 0
+    margin-right: 100px
+    +r(1500)
+      margin-right: 50px
+    +r(767)
+      margin-right: 0
+      margin-bottom: 30px
+      max-width: none
+      text-align: center
+    h4
+      margin-bottom: 30px
+      font-size: 22px
+      font-weight: 600
+      line-height: 1.5
+      +r(767)
+        margin-bottom: 20px
+    p
+      margin: 0
+      font-weight: 600
+      color: $accent
+  &__wrap
+    flex-shrink: 0
+    width: 1250px
+    padding-top: 15px
+    +r(1730)
+      width: calc(100% - 370px)
+    +r(1500)
+      width: calc(100% - 290px)
+    +r(767)
+      width: auto
+
+.countries-slider
+  &__item
+    display: flex
+    align-items: center
+    font-size: 18px
+    font-weight: 500
+    +r(480)
+      font-size: 16px
+    img
+      margin-right: 20px

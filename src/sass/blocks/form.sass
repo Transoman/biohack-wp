@@ -1,0 +1,89 @@
+.form-group
+  position: relative
+  margin-bottom: 20px
+  &--btn
+    margin-top: 40px
+  &--term
+    margin-top: 30px
+    margin-bottom: 0
+.form-field
+  width: 100%
+  padding: 16px 20px
+  border: 1px solid #0F1217
+  background-color: $dark
+  border-radius: 4px
+  font-weight: 500
+  color: #fff
+  box-shadow: none
+  appearance: none
+  +trans
+  +r(767)
+    padding: 12px 15px
+  &::placeholder
+    color: inherit
+  &:focus
+    outline: none
+    border-color: $accent
+
+input[type="checkbox"]
+  @extend .visually-hidden
+  &:checked + span::after
+    opacity: 1
+  + span
+    position: relative
+    padding-left: 30px
+    font-size: 12px
+    font-weight: 500
+    color: #828A8F
+    cursor: pointer
+    &::before
+      content: ''
+      position: absolute
+      top: -3px
+      left: 0
+      width: 20px
+      height: 20px
+      border-radius: 4px
+      background-color: $dark
+    &::after
+      content: ''
+      position: absolute
+      left: 6px
+      top: 0
+      width: 8px
+      height: 11px
+      border: 2px solid #fff
+      border-top: 0
+      border-left: 0
+      transform: rotate(45deg)
+      +trans
+      opacity: 0
+
+span.wpcf7-list-item
+  margin: 0
+  label
+    margin: 0
+
+.btn-loading
+  &::before
+    content: ''
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 18px
+    height: 18px
+    margin-top: 9px
+    margin-right: 10px
+    bottom: auto
+    left: auto
+    opacity: 1
+    border-radius: 50%
+    border: 3px solid transparent
+    border-top: 3px solid rgba(255, 255, 255, 0.7)
+    border-right: 3px solid rgba(255, 255, 255, 0.7)
+    background: transparent
+    animation: 0.5s rotate cubic-bezier(0.4, 0, 0.2, 1) infinite
+    +r(1200)
+      margin-top: 6px
+    +r(767)
+      margin-top: 4px

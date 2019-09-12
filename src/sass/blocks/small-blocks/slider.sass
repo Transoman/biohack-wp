@@ -1,0 +1,38 @@
+.slider-controls
+  position: relative
+  display: flex
+  align-items: center
+  .swiper-button-prev,
+  .swiper-button-next
+    position: static
+    display: flex
+    align-items: center
+    justify-content: center
+    width: auto
+    height: auto
+    margin: 0
+    padding: 30px 45px
+    border: 1px solid $accent
+    background: none
+    +trans
+    +r(767)
+      padding: 15px 25px
+    &:hover, &:focus
+      background-color: $accent
+      outline: none
+    svg
+      width: 25px
+      height: 20px
+      fill: #fff
+      +trans
+      +r(767)
+        width: 20px
+        height: 15px
+  .swiper-button-prev
+    border-radius: 10px 0 0 10px
+  .swiper-button-next
+    margin-left: -1px
+    border-radius: 0 10px 10px 0
+
+.swiper-pagination-bullet
+  background: $accent

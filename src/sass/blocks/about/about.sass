@@ -1,0 +1,81 @@
+.about
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  .section-header
+    margin-bottom: 50px
+    padding-left: 0
+    +r(992)
+      padding-left: 40px
+    +r(767)
+      padding-left: 0
+      margin-bottom: 30px
+    &::before
+      left: -40px
+      +r(992)
+        left: 0
+  .section-title
+    font-size: 48px
+    +r(1200)
+      font-size: 38px
+    +r(767)
+      font-size: 28px
+  &__inner
+    display: flex
+    justify-content: space-between
+    +r(992)
+      display: block
+  &__col
+    width: calc((100% / 2) - (80px / 2))
+    +r(1200)
+      width: calc((100% / 2) - (30px / 2))
+    +r(992)
+      width: auto
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+    &--right
+      padding-top: 40px
+      +r(992)
+        display: flex
+        flex-direction: column-reverse
+        padding-top: 0
+      .img-wrap
+        margin-bottom: 65px
+        +r(992)
+          margin-bottom: 0
+          margin-top: 40px
+  &__content
+    padding: 0 40px
+    margin-bottom: 90px
+    +r(1500)
+      padding: 0
+    +r(1200)
+      margin-bottom: 40px
+    p
+      margin-bottom: 35px
+      font-size: 20px
+      font-weight: 500
+      line-height: 1.8
+      +r(1200)
+        font-size: 18px
+      +r(767)
+        margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+  &__text
+    padding-right: 40px
+    +r(1500)
+      padding-right: 0
+    p
+      margin-bottom: 35px
+      font-size: 18px
+      line-height: 2
+      +r(1200)
+        font-size: 16px
+        line-height: 1.8
+      +r(767)
+        margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0

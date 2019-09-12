@@ -1,0 +1,161 @@
+.nav
+  position: relative
+  +r(767)
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 10
+    width: 320px
+    height: 100%
+    padding: 23px 20px
+    background-color: #fff
+    transform: translateX(100%)
+    overflow-y: auto
+    +trans
+    &.open
+      transform: translateX(0)
+  &:hover
+    .nav-list
+      opacity: 1
+      visibility: visible
+  &__title
+    display: block
+    padding: 0 40px 10px
+    font-size: 18px
+    font-weight: 500
+    color: #fff
+    cursor: pointer
+    +trans
+    +r(767)
+      margin-bottom: 30px
+      padding: 0
+      color: $dark
+    &:hover
+      color: $accent
+  &__close
+    display: none
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 30px
+    height: 30px
+    padding: 0
+    border: 0
+    background: none
+    margin-left: auto
+    +trans
+    &:hover, &:focus
+      outline: none
+      &::before, &::after
+        background-color: $accent
+    &::before, &::after
+      content: ''
+      position: absolute
+      right: 6px
+      width: 60%
+      height: 2px
+      background-color: $dark
+      +trans
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+    +r(767)
+      display: block
+
+
+.nav-list
+  position: absolute
+  top: 100%
+  left: 0
+  width: 320px
+  background-color: #fff
+  margin: 0
+  padding: 25px 20px
+  list-style: none
+  opacity: 0
+  visibility: hidden
+  +trans
+  +r(767)
+    position: static
+    top: auto
+    left: auto
+    width: auto
+    background: none
+    padding: 0
+    opacity: 1
+    visibility: visible
+  &__item
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0
+  a
+    color: #000
+    &:hover, &:focus
+      color: $accent
+
+.nav-toggle
+  display: none
+  position: absolute
+  right: 0
+  bottom: 15px
+  width: 28px
+  height: 15px
+  padding: 0
+  margin: 0
+  outline: none
+  border: none
+  background: none
+  z-index: 9
+  cursor: pointer
+  +r(767)
+    display: block
+  +r(576)
+    bottom: 25px
+  &:focus
+    outline: none
+  &__line
+    position: relative
+    display: block
+    height: 2px
+    width: 100%
+    background: $accent
+    +trans
+    &::after, &::before
+      content: ''
+      position: absolute
+      left: 0
+      display: block
+      height: 2px
+      width: 100%
+      background: $accent
+      +trans
+    &::before
+      top: -6px
+    &::after
+      top: 6px
+  &.active
+    .nav-toggle__line
+      background: transparent
+      &::after
+        top: 0
+        transform: rotate(45deg)
+      &::before
+        top: 0
+        transform: rotate(-45deg)
+
+.nav-overlay
+  +r(767)
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 9
+    background-color: rgba(#101A2E, 0.8)
+    opacity: 0
+    visibility: hidden
+    +trans
+    &.is-active
+      opacity: 1
+      visibility: visible

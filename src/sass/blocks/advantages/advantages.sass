@@ -1,0 +1,91 @@
+.advantages
+  padding-bottom: 40px
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  +r(767)
+    padding-bottom: 30px
+  &__left
+    .advantages__row
+      padding: 0 0 0 80px
+      +r(1200)
+        padding: 0 20px 0 0
+      +r(992)
+        padding: 0 0 0 40px
+      +r(767)
+        padding-left: 20px
+  &__right
+    .advantages__row
+      padding: 80px 40px 0
+      +r(1200)
+        padding: 50px 0 0 20px
+      +r(992)
+        padding-top: 0
+        padding-left: 40px
+      +r(767)
+        padding-left: 20px
+
+.advantages-card
+  position: relative
+  margin-bottom: 80px
+  padding: 60px 80px
+  border: 3px solid $accent
+  border-radius: 20px
+  +r(1200)
+    padding: 50px 60px
+  +r(992)
+    margin-bottom: 30px
+  +r(767)
+    padding: 20px
+    padding-left: 30px
+    border-width: 2px
+    border-radius: 10px
+  p
+    font-size: 22px
+    font-weight: 500
+    line-height: 1.36
+    +r(992)
+      font-size: 20px
+    +r(767)
+      font-size: 18px
+    &:last-child
+      margin-bottom: 0
+  &__icon
+    position: absolute
+    top: 40px
+    left: -35px
+    width: 70px
+    height: 80px
+    background-color: $accent
+    text-align: center
+    line-height: 80px
+    clip-path: polygon(50% 0, 100% calc(100% / 4), 100% calc(100% - (100% / 4)), 50% 100%, 0 calc(100% - (100% / 4)), 0 calc(100% / 4))
+    +r(767)
+      top: 20px
+      left: -21px
+      width: 40px
+      height: 50px
+      line-height: 50px
+    &::before
+      content: ''
+      position: absolute
+      top: 3px
+      right: 3px
+      bottom: 3px
+      left: 3px
+      z-index: -1
+      background-color: #101A2E
+      clip-path: polygon(50% 0, 100% calc(100% / 4), 100% calc(100% - (100% / 4)), 50% 100%, 0 calc(100% - (100% / 4)), 0 calc(100% / 4))
+      +r(767)
+        top: 2px
+        right: 2px
+        bottom: 2px
+        left: 2px
+    svg
+      width: 24px
+      height: 17px
+      fill: #fff
+      +r(767)
+        width: 20px
+        height: 16px
