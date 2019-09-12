@@ -24,6 +24,10 @@
           <img src="<?php echo THEME_URL; ?>/images/general/logo.png" alt="Mitra Clinic">
         </a>
 
+        <div class="header__address">
+          <?php the_field( 'address', 'option' ); ?>
+        </div>
+
         <nav class="nav header__nav">
           <button type="button" class="nav__close"></button>
 
@@ -56,6 +60,10 @@
         <div class="nav-overlay"></div>
         
         <div class="phone header__phone">
+	        <?php if (get_field( 'site', 'option' )): ?>
+            <a href="<?php echo esc_url( get_field( 'site', 'option' ) ); ?>" target="_blank" class="phone__tel"><?php echo preg_replace( '!^https?:\/\/!', '', get_field( 'site', 'option' ) ); ?></a>
+	        <?php endif; ?>
+
           <?php if (get_field( 'phone_1', 'option' )): ?>
             <a href="tel:<?php echo preg_replace( '![^0-9/+]+!', '', get_field( 'phone_1', 'option' ) ); ?>" class="phone__tel"><?php the_field( 'phone_1', 'option' ); ?></a>
           <?php endif; ?>

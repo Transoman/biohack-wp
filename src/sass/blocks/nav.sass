@@ -1,6 +1,6 @@
 .nav
   position: relative
-  +r(767)
+  +r(992)
     position: fixed
     top: 0
     right: 0
@@ -8,7 +8,7 @@
     width: 320px
     height: 100%
     padding: 23px 20px
-    background-color: #fff
+    background-color: $blue
     transform: translateX(100%)
     overflow-y: auto
     +trans
@@ -26,12 +26,14 @@
     color: #fff
     cursor: pointer
     +trans
-    +r(767)
+    +r(992)
       margin-bottom: 30px
       padding: 0
-      color: $dark
+      color: #fff
     &:hover
       color: $accent
+      +r(992)
+        color: #fff
   &__close
     display: none
     position: absolute
@@ -54,13 +56,13 @@
       right: 6px
       width: 60%
       height: 2px
-      background-color: $dark
+      background-color: #fff
       +trans
     &::before
       transform: rotate(45deg)
     &::after
       transform: rotate(-45deg)
-    +r(767)
+    +r(992)
       display: block
 
 
@@ -76,7 +78,7 @@
   opacity: 0
   visibility: hidden
   +trans
-  +r(767)
+  +r(992)
     position: static
     top: auto
     left: auto
@@ -91,6 +93,8 @@
       margin-bottom: 0
   a
     color: #000
+    +r(992)
+      color: #fff
     &:hover, &:focus
       color: $accent
 
@@ -108,10 +112,12 @@
   background: none
   z-index: 9
   cursor: pointer
-  +r(767)
+  +r(992)
     display: block
+  +r(767)
+    bottom: 35px
   +r(576)
-    bottom: 25px
+    bottom: 30px
   &:focus
     outline: none
   &__line
@@ -119,7 +125,7 @@
     display: block
     height: 2px
     width: 100%
-    background: $accent
+    background-color: #fff
     +trans
     &::after, &::before
       content: ''
@@ -128,7 +134,7 @@
       display: block
       height: 2px
       width: 100%
-      background: $accent
+      background-color: #fff
       +trans
     &::before
       top: -6px
@@ -145,7 +151,7 @@
         transform: rotate(-45deg)
 
 .nav-overlay
-  +r(767)
+  +r(992)
     position: fixed
     top: 0
     right: 0

@@ -5,7 +5,8 @@ let svg4everybody = require('svg4everybody'),
   iMask = require('imask'),
   Swiper = require('swiper'),
   fancybox = require('@fancyapps/fancybox'),
-  Simplebar = require('simplebar');
+  AOS = require('aos');
+  // Simplebar = require('simplebar');
 
 jQuery(document).ready(function($) {
   // Toggle nav menu
@@ -135,7 +136,7 @@ jQuery(document).ready(function($) {
 
   new Swiper('.countries-slider', {
     slidesPerView: 5,
-    spaceBetween: 30,
+    spaceBetween: 20,
     speed: 1000,
     slidesPerColumn: 2,
     autoplay: {
@@ -144,22 +145,18 @@ jQuery(document).ready(function($) {
     breakpoints: {
       1730: {
         slidesPerView: 4,
-        spaceBetween: 30,
         slidesPerColumn: 2
       },
-      1200: {
+      1300: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerColumn: 2
+      },
+      1100: {
+        slidesPerView: 2,
         slidesPerColumn: 2
       },
       992: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesPerColumn: 2
-      },
-      576: {
         slidesPerView: 1,
-        spaceBetween: 30,
         slidesPerColumn: 2
       }
     }
@@ -254,8 +251,12 @@ jQuery(document).ready(function($) {
       pagination: {
         el: '.swiper-pagination',
       },
+      navigation: {
+        nextEl: '.s-teams .swiper-button-next',
+        prevEl: '.s-teams .swiper-button-prev',
+      },
     });
-  }
+  };
 
   // keep an eye on viewport size changes
   breakpoint.addListener(breakpointChecker);
@@ -435,13 +436,19 @@ jQuery(document).ready(function($) {
   toggleNav();
   initModal();
   inputMask();
-  methodsShowHide();
+  // methodsShowHide();
   contactForm();
   fixedHeader($(this));
   lazyVideo();
+  AOS.init({
+    once: true,
+    duration: 1000,
+    offset: 300,
+    delay: 50
+  });
 
   $(window).resize(function() {
-    methodsShowHide();
+    // methodsShowHide();
   });
 
   $(window).scroll(function() {

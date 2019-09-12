@@ -28,6 +28,7 @@
       display: block
   &__col
     width: calc((100% / 2) - (80px / 2))
+    text-align: justify
     +r(1200)
       width: calc((100% / 2) - (30px / 2))
     +r(992)
@@ -42,7 +43,9 @@
         flex-direction: column-reverse
         padding-top: 0
       .img-wrap
-        margin-bottom: 65px
+        margin-bottom: 120px
+        +r(1500)
+          margin-bottom: 65px
         +r(992)
           margin-bottom: 0
           margin-top: 40px
@@ -65,9 +68,11 @@
       &:last-child
         margin-bottom: 0
   &__text
-    padding-right: 40px
+    padding: 0 40px
     +r(1500)
       padding-right: 0
+    +r(1200)
+      padding: 0
     p
       margin-bottom: 35px
       font-size: 18px

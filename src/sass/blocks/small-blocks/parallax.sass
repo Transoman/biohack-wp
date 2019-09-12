@@ -1,0 +1,30 @@
+.parallax
+  position: absolute
+  z-index: 1
+  +r(992)
+    display: none
+  &-1
+    right: calc((100% - 1440px) / 2 - 250px)
+    top: 120px
+    +r(1500)
+      right: calc((100% - 1440px) / 2 - 60px)
+    +r(1200)
+      right: calc((100% - 1300px) / 2)
+  &-2
+    top: 490px
+    right: 85%
+  &-3
+    bottom: 540px
+    right: 88%
+  &-4
+    right: calc((100% - 1440px) / 2 - 250px)
+    top: 52%
+    +r(1500)
+      right: calc((100% - 1440px) / 2 - 150px)
+  &-5
+    bottom: -80px
+    right: calc((100% - 1440px) / 2 - 190px)
+    +r(1500)
+      right: calc((100% - 1440px) / 2 - 60px)
+    +r(1200)
+      right: calc((100% - 1300px) / 2 - 50px)

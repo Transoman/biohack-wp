@@ -110,7 +110,7 @@ get_header(); ?>
             <img src="<?php echo THEME_URL; ?>/images/content/about-img-2.jpg" alt="">
           </div>
 
-          <div class="about__text triangle-decor">
+          <div class="about__text">
             <p>Впервые этот термин появился в Кремниевой долине (США) ― ведущем мировом «центре притяжения» разработчиков высокотехнологических наукоемких проектов, месте развития мировых инноваций.</p>
 
             <p>Термин пришелся по душе многим известным людям, банкирам и инвесторам с Уолл Стрит, которые на себе почувствовали позитивную мощь биохакинга ― ведь высокая работоспособность, крепкое здоровье, эстетичный внешний вид сегодня относятся к признакам успешного человека.</p>
@@ -178,57 +178,92 @@ if ($gallery): ?>
         <h2 class="section-title">Диагностика и консультирование</h2>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="consultation-card">
-            <div class="consultation-card__inner">
-              <h3 class="consultation-card__title">Полное сканирование организма на медицинском аппаратно- программном комплексе «Метатрон». <br><span>Точность 98-100%.</span></h3>
+      <div class="consultation-list">
 
-              <ul class="consultation-card__list">
-                <li>Определение рисков развития заболеваний на самом раннем этапе, когда их можно устранить быстро, безболезненно и бесследно</li>
-                <li>Определение состояние всех органов и систем (в т.ч. лимфатическая система, мышечная система, костная система)</li>
-                <li>Включение систем обратной связи с пациентом для настройки клеток и тканей на здоровое функционирование</li>
-                <li>Альтернативная диагностика по меридианам и биологически активным точкам, основанная на принципах древней индийской медицины и классической китайской акупунктуры</li>
-                <li>Выдача заключения о психоэмоциональном состоянии пациента для предупреждения развития множества опасных заболеваний, в том числе онкологии</li>
-              </ul>
+        <div class="consultation-list__item">
+          <h3 class="consultation-list__title" data-aos="fade-up">Полное сканирование организма на медицинском аппаратно- программном комплексе «Метатрон». <span>Точность 98-100%.</span></h3>
+
+          <div class="consultation-list__list">
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-1' ); ?>
+              <p>Определение рисков развития заболеваний на самом раннем этапе, когда их можно устранить быстро, безболезненно и бесследно</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-2' ); ?>
+              <p>Определение состояние всех органов и систем (в т.ч. лимфатическая система, мышечная система, костная система)</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-3' ); ?>
+              <p>Включение систем обратной связи с пациентом для настройки клеток и тканей на здоровое функционирование</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-4' ); ?>
+              <p>Альтернативная диагностика по меридианам и биологически активным точкам, основанная <br>на принципах древней индийской медицины и классической китайской акупунктуры</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-5' ); ?>
+              <p>Выдача заключения о психоэмоциональном состоянии пациента для предупреждения развития множества опасных заболеваний, в том числе онкологии</p>
             </div>
           </div>
 
-          <div class="consultation-card">
-            <div class="consultation-card__inner">
-              <h3 class="consultation-card__title">Биохимические анализы крови</h3>
+        </div><!-- /.consultation-list__item -->
 
-              <ul class="consultation-card__list">
-                <li>Определение биохимических показателей, важных для активного долголетия</li>
-                <li>Выявление точного гормонального статуса с учетом пола и возраста</li>
-                <li>Определение функциональных отклонений в работе внутренних органов и систем организма</li>
-                <li>Ориентиры при определении отклонений ― на Биохимическую панель долголетия с более строгими, чем принятые усредненные, нормами</li>
-              </ul>
+        <div class="consultation-list__item">
+          <h3 class="consultation-list__title" data-aos="fade-up">Генетическое тестирование (ДНК-тестирование) для оценки полной картины рисков заболеваний, процессов пищеварения и распада токсинов, а также определения максимально результативных физических нагрузок для конкретного человека.</h3>
+
+          <div class="consultation-list__list">
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-6' ); ?>
+              <p>Выявление информации, заложенной на генетическом уровне ― ее невозможно изменить, <br>но знания о ней можно использовать для повышения работоспособности и качества жизни</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-7' ); ?>
+              <p>Получение развернутых и на 100% достоверных результатов</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-8' ); ?>
+              <p>Минимальная степень медицинского вмешательства ― проводится забор генетического материала ватной палочкой из полости рта</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-9' ); ?>
+              <p>Повышение эффективности работы по предупреждению развития наследственных заболеваний</p>
             </div>
           </div>
 
-        </div>
+        </div><!-- /.consultation-list__item -->
 
-        <div class="col consultation__right">
-          <div class="consultation-card">
-            <div class="consultation-card__inner">
-              <h3 class="consultation-card__title">Генетическое тестирование (ДНК-тестирование) для оценки полной картины рисков заболеваний, процессов пищеварения и распада токсинов, а также определения максимально результативных физических нагрузок для конкретного человека.</h3>
+        <div class="consultation-list__item">
+          <h3 class="consultation-list__title" data-aos="fade-up">Биохимические анализы крови</h3>
 
-              <ul class="consultation-card__list">
-                <li>Выявление информации, заложенной на генетическом уровне ― ее невозможно изменить, но знания о ней можно использовать для повышения работоспособности и качества жизни</li>
-                <li>Получение развернутых и на 100% достоверных результатов</li>
-                <li>Минимальная степень медицинского вмешательства ― проводится забор генетического материала ватной палочкой из полости рта</li>
-                <li>Повышение эффективности работы по предупреждению развития наследственных заболеваний</li>
-              </ul>
+          <div class="consultation-list__list">
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-10' ); ?>
+              <p>Определение биохимических показателей, важных для активного долголетия</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-11' ); ?>
+              <p>Выявление точного гормонального статуса с учетом пола и возраста</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-12' ); ?>
+              <p>Определение функциональных отклонений в работе внутренних органов <br>и систем организма</p>
+            </div>
+            <div class="consultation-list__list-item" data-aos="fade-up">
+			        <?php ith_the_icon( 'cons-13' ); ?>
+              <p>Ориентиры при определении отклонений ― на Биохимическую панель долголетия <br>с более строгими, чем принятые усредненные, нормами</p>
             </div>
           </div>
 
-          <div class="consultation__content">
-            <h3>Консультации специалистов</h3>
-            <p>В соответствии с результатами диагностики для пациента составляется индивидуальная <span>«дорожная карта»</span> с указанием специалистов команды Биохакинга Митра Клиники, развернутые консультации которых необходимо получить в данном случае</p>
-          </div>
+        </div><!-- /.consultation-list__item -->
 
-        </div>
+        <span class="consultation-list__decor consultation-list__decor--1"></span>
+        <span class="consultation-list__decor consultation-list__decor--2"></span>
+
+      </div><!-- /.consultation-list -->
+
+      <div class="consultation__content">
+        <h3>Консультации специалистов</h3>
+        <p>В соответствии с результатами диагностики для пациента составляется индивидуальная <span>«дорожная карта»</span> с указанием специалистов команды Биохакинга Митра Клиники, развернутые консультации которых необходимо получить в данном случае</p>
       </div>
 
     </div>
@@ -237,43 +272,80 @@ if ($gallery): ?>
   <section class="s-steps" id="steps" style="background-image: url('<?php echo THEME_URL; ?>/images/content/steps-bg.jpg');">
     <div class="container">
 
-      <h2 class="section-title">Разработка индивидуальной программы оздоровления, долголетия, повышения качества жизни</h2>
+      <div class="section-header">
+        <h2 class="section-title">Разработка индивидуальной программы оздоровления, долголетия, повышения <br>качества жизни</h2>
+      </div>
 
       <div class="steps">
 
-        <div class="steps__item">
-          <div class="steps__number"><span>1</span></div>
-          <p><strong>Система питания.</strong> Подбор диеты на основе ДНК-теста, коррекция рациона, выведение из него продуктов, вредных для организма или вызывающих недружественную реакцию. Применение авторских разработок для снижения риска онкологии, сахарного диабета, остеопороза, сердечно- сосудистых заболеваний с помощью диеты.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>1</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-1.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Система питания.</strong> Подбор диеты на основе ДНК-теста, коррекция рациона, выведение из него продуктов, вредных для организма или вызывающих недружественную реакцию. Применение авторских разработок для снижения риска онкологии, сахарного диабета, остеопороза, сердечно- сосудистых заболеваний с помощью диеты.</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>2</span></div>
-          <p><strong>Активизация мозговой деятельности.</strong> Регуляция и активизация когнитивных функций мозга ― мышления, внимания, памяти, творческих способностей. Индивидуальный подбор натуропатических средств.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>2</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-2.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Активизация мозговой деятельности.</strong> Регуляция и активизация когнитивных функций мозга ― мышления, внимания, памяти, творческих способностей. Индивидуальный подбор натуропатических средств.</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>3</span></div>
-          <p><strong>Физическая активность.</strong> Разработка индивидуальной схемы (упражнения, расписание) оптимальных физических нагрузок для нормализации веса, укрепления опорно-двигательного аппарата, усиления эластичности мышц.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>3</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-3.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Физическая активность.</strong> Разработка индивидуальной схемы (упражнения, расписание) оптимальных физических нагрузок для нормализации веса, укрепления опорно-двигательного аппарата, усиления эластичности мышц.</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>4</span></div>
-          <p><strong>Стресс-менеджмент.</strong> Работа над снижением физической и психической чувствительности к стрессовым ситуациям; смягчение ответа организма на стрессовые состояния.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>4</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-4.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Стресс-менеджмент.</strong> Работа над снижением физической и психической чувствительности к стрессовым ситуациям; смягчение ответа организма на стрессовые состояния.</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>5</span></div>
-          <p><strong>Детокс и выравнивание гормонального статуса.</strong> Активное выведение из организма токсинов, выравнивание гормонального баланса. Нелекарственная борьба с возрастными проявлениями (менопауза у женщин, андропауза у мужчин).</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>5</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-5.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Детокс и выравнивание гормонального статуса.</strong> Активное выведение из организма токсинов, выравнивание гормонального баланса. Нелекарственная борьба с возрастными проявлениями (менопауза у женщин, андропауза у мужчин).</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>6</span></div>
-          <p><strong>Сон.</strong> Повышение качества сна, облегчение засыпания, противодействие синдрому хронической усталости. Повышение работоспособности, улучшение физического состояния.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>6</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-6.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Сон.</strong> Повышение качества сна, облегчение засыпания, противодействие синдрому хронической усталости. Повышение работоспособности, улучшение физического состояния.</p>
+          </div>
         </div>
 
-        <div class="steps__item">
-          <div class="steps__number"><span>7</span></div>
-          <p><strong>Эстетика.</strong> Сохранение здоровья и красоты кожи и волос, общее (в том числе визуальное) омоложение организма.</p>
+        <div class="steps__item" data-aos="fade-up">
+          <div class="steps__img">
+            <div class="steps__number"><span>7</span></div>
+            <img src="<?php echo THEME_URL; ?>/images/content/step-7.jpg" alt="">
+          </div>
+          <div class="steps__content">
+            <p><strong>Эстетика.</strong> Сохранение здоровья и красоты кожи и волос, общее (в том числе визуальное) омоложение организма.</p>
+          </div>
         </div>
 
       </div><!-- /.steps -->
@@ -347,101 +419,132 @@ if ($portfolios->have_posts()): ?>
 
       <div class="row methods__list">
         <div class="col">
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Метакоррекция ― терапия здоровой частотой.</h4>
-            <p>В аппаратно-программный комплекс «Метатрон» (см. раздел «Диагностика и консультирование») включена система оздоравливающей обратной связи с пациентом, позволяющая настраивать все его клетки и ткани на здоровое функционирование.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Метакоррекция ― терапия здоровой частотой.</h4>
+              <p>В аппаратно-программный комплекс «Метатрон» (см. раздел «Диагностика и консультирование») включена система оздоравливающей обратной связи с пациентом, позволяющая настраивать все его клетки и ткани на здоровое функционирование.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Натуропатия.</h4>
-            <p>«Природная медицина», запускающая в организме человека процессы самооздоровления и регенерации. Мягкое нетравматичное, не имеющее абсолютных противопоказаний воздействие позволяет постепенно восстановить здоровье, буквально повернув вспять биологические часы.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Натуропатия.</h4>
+              <p>«Природная медицина», запускающая в организме человека процессы самооздоровления и регенерации. Мягкое нетравматичное, не имеющее абсолютных противопоказаний воздействие позволяет постепенно восстановить здоровье, буквально повернув вспять биологические часы.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Фунготерапия.</h4>
-            <p>Лечение различных недугов лекарственными грибами, в том числе шиитаке ― традиционный метод лечения Китая, Японии, Восточной Азии. Грибы считаются особой формой жизни, сочетающей признаки животного и растительного мира. Они богаты аминокислотами, белками, витаминами и микроэлементами. Применение фунготерапии позволяет получить антибактериальный, протиовопухолевый, противоревматический эффекты.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Фунготерапия.</h4>
+              <p>Лечение различных недугов лекарственными грибами, в том числе шиитаке ― традиционный метод лечения Китая, Японии, Восточной Азии. Грибы считаются особой формой жизни, сочетающей признаки животного и растительного мира. Они богаты аминокислотами, белками, витаминами и микроэлементами. Применение фунготерапии позволяет получить антибактериальный, протиовопухолевый, противоревматический эффекты.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Гомотоксикология.</h4>
-            <p>Гомеопатическая методика немецкого врача Реккевега, основанная на выводе из организма токсинов, вызвавших развитие различных видов патологии.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Гомотоксикология.</h4>
+              <p>Гомеопатическая методика немецкого врача Реккевега, основанная на выводе из организма токсинов, вызвавших развитие различных видов патологии.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Классическая гомеопатия.</h4>
-            <p>«Лечение подобного подобным» с использованием микродоз десятков различных биологически активных веществ.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Классическая гомеопатия.</h4>
+              <p>«Лечение подобного подобным» с использованием микродоз десятков различных биологически активных веществ.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Витаминные комплексы <br>и биологически-активные добавки.</h4>
-            <p>Комплексы активных веществ, необходимых организму для поддержания здоровья и повышения функциональности органов и систем. Используем комплексы, ориентированные как на решение конкретных проблем, так и на общее оздоровление человека.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Витаминные комплексы <br>и биологически-активные добавки.</h4>
+              <p>Комплексы активных веществ, необходимых организму для поддержания здоровья и повышения функциональности органов и систем. Используем комплексы, ориентированные как на решение конкретных проблем, так и на общее оздоровление человека.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Рефлексотерапия, гирудотерапия, массажи</h4>
-            <p>и другие оздоровительные и повышающие энергетический статус и высвобождающие скрытые возможности и резервы организма методики.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Рефлексотерапия, гирудотерапия, массажи</h4>
+              <p>и другие оздоровительные и повышающие энергетический статус и высвобождающие скрытые возможности и резервы организма методики.</p>
+            </div>
           </div>
 
         </div>
 
         <div class="col">
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Детокс-терапия.</h4>
-            <p>Активное очищение, направленное на активизацию вывода из организма токсинов. Освобождение от токсинов облегчает работу внутренних органов, способствует повышению работоспособности, нормализации веса, улучшает внешний вид.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Детокс-терапия.</h4>
+              <p>Активное очищение, направленное на активизацию вывода из организма токсинов. Освобождение от токсинов облегчает работу внутренних органов, способствует повышению работоспособности, нормализации веса, улучшает внешний вид.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Фитотерапия.</h4>
-            <p>Лечение сотен заболеваний настоями, экстрактами и отварами лекарственных растений, от широко известных в средней полосе России, до экзотических и особо ценных из разных стран мира.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Фитотерапия.</h4>
+              <p>Лечение сотен заболеваний настоями, экстрактами и отварами лекарственных растений, от широко известных в средней полосе России, до экзотических и особо ценных из разных стран мира.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Биопунктура.</h4>
-            <p>Введение гомеопатических препаратов в биологически- активные (акупунктурные) точки организма. Сочетание акупунктуры с действием гомеопатических препаратов позволяет добиться максимальной эффективности терапии.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Биопунктура.</h4>
+              <p>Введение гомеопатических препаратов в биологически- активные (акупунктурные) точки организма. Сочетание акупунктуры с действием гомеопатических препаратов позволяет добиться максимальной эффективности терапии.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Физиологическая регуляционная медицина (ФРМ).</h4>
-            <p>Инновационное направление, направленное на восстановление физиологического баланса организма с помощью его собственных веществ (ферментов, гормонов).</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Физиологическая регуляционная медицина (ФРМ).</h4>
+              <p>Инновационное направление, направленное на восстановление физиологического баланса организма с помощью его собственных веществ (ферментов, гормонов).</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Ступенчатая аутогемотерапия <br>по Реккевегу.</h4>
-            <p>Оздоровительная методика, предполагающая  использование собственной крови пациента, в микродозах разведенной в гомеопатических препаратах. Сочетание усиливает действенность и аутогемотерапии, и гомеопатических препаратов.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Ступенчатая аутогемотерапия <br>по Реккевегу.</h4>
+              <p>Оздоровительная методика, предполагающая  использование собственной крови пациента, в микродозах разведенной в гомеопатических препаратах. Сочетание усиливает действенность и аутогемотерапии, и гомеопатических препаратов.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Остеопатия и краниосакральная мануальная терапия.</h4>
-            <p>«Ручная коррекция» организма опытными врачами. Оказывает гармонизирующее воздействие на работу всех органов и систем.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Остеопатия и краниосакральная мануальная терапия.</h4>
+              <p>«Ручная коррекция» организма опытными врачами. Оказывает гармонизирующее воздействие на работу всех органов и систем.</p>
+            </div>
           </div>
 
-          <div class="methods-card">
-            <span class="methods-card__plus">+</span>
-            <h4 class="methods-card__title">Косметология.</h4>
-            <p>Используем инновационные методы омоложения кожи и волос ― в том числе терапию введением собственной плазмы (в плазмолифтинг и истинное PRP), биоревитализацию, коллагеновую терапию, плацентарную терапию, контурную пластику, нитевой лифтинг ипоследние мировые косметологические тренды.</p>
+          <div class="methods-card" data-aos="fade-up">
+            <div class="methods-card__inner">
+              <span class="methods-card__plus">+</span>
+              <h4 class="methods-card__title">Косметология.</h4>
+              <p>Используем инновационные методы омоложения кожи и волос ― в том числе терапию введением собственной плазмы (в плазмолифтинг и истинное PRP), биоревитализацию, коллагеновую терапию, плацентарную терапию, контурную пластику, нитевой лифтинг ипоследние мировые косметологические тренды.</p>
+            </div>
           </div>
 
         </div>
       </div>
 
-      <div class="text-center">
-        <a href="#" class="btn methods__show-all">Показать еще</a>
-      </div>
-
     </div>
+
+    <img src="<?php echo THEME_URL; ?>/images/content/decor-1.png" alt="" class="parallax parallax-1">
+    <img src="<?php echo THEME_URL; ?>/images/content/decor-2.png" alt="" class="parallax parallax-2">
+    <img src="<?php echo THEME_URL; ?>/images/content/decor-3.png" alt="" class="parallax parallax-3">
+    <img src="<?php echo THEME_URL; ?>/images/content/decor-4.png" alt="" class="parallax parallax-4">
+    <img src="<?php echo THEME_URL; ?>/images/content/decor-5.png" alt="" class="parallax parallax-5">
+
   </section>
 
 <?php $teams = get_any_post( 'team', -1 );
@@ -449,8 +552,21 @@ if ($teams->have_posts()): ?>
   <section class="s-teams" id="teams" style="background-image: url('<?php echo THEME_URL; ?>/images/content/team-bg.jpg');">
     <div class="container">
 
-      <div class="section-header">
-        <h2 class="section-title">Кто работает в области биохакинга <br>в Mitra Clinic</h2>
+      <div class="section-top">
+
+        <div class="section-header">
+          <h2 class="section-title">Кто работает в области биохакинга <br>в Mitra Clinic</h2>
+        </div>
+
+        <div class="slider-controls">
+          <div class="swiper-button-prev">
+				    <?php ith_the_icon( 'arrow-left' ); ?>
+          </div>
+          <div class="swiper-button-next">
+				    <?php ith_the_icon( 'arrow-right' ); ?>
+          </div>
+        </div>
+
       </div>
 
       <div class="teams">
@@ -463,7 +579,7 @@ if ($teams->have_posts()): ?>
             <h3 class="teams__title"><?php the_title(); ?></h3>
             <p class="teams__experience"><?php the_field( 'experience' ); ?></p>
 
-            <div class="teams__content" data-simplebar>
+            <div class="teams__content">
               <?php the_content(); ?>
             </div>
           </div>
@@ -483,7 +599,7 @@ if ($teams->have_posts()): ?>
 
       <div class="trust__wrap">
 
-        <div class="trust__content triangle-decor">
+        <div class="trust__content">
           <p>8 из 10 наших клиентов приходят по рекомендации родных, друзей, коллег</p>
           <p><span>Mitra Clinic ― первая частная клиника в Москве где не просто лечат симптомы, а выявляют причины заболеваний</span></p>
           <p class="text-sm">Mitra Clinic, <a href="#">лицензия №ЛО-77-01-016597</a> <br>от 30 августа 2018 года</p>
@@ -546,14 +662,14 @@ if ($news->have_posts()): ?>
 
           <div class="advantages__row">
 
-            <div class="advantages-card">
+            <div class="advantages-card" data-aos="fade-up">
               <div class="advantages-card__icon">
                 <?php ith_the_icon( 'check' ); ?>
               </div>
               <p>…Все диагностические обследования и консультации можно получить в одном месте, у специалистов с высочайшим уровнем квалификации</p>
             </div>
 
-            <div class="advantages-card">
+            <div class="advantages-card" data-aos="fade-up">
               <div class="advantages-card__icon">
                 <?php ith_the_icon( 'check' ); ?>
               </div>
@@ -567,21 +683,21 @@ if ($news->have_posts()): ?>
         <div class="col advantages__right">
           <div class="advantages__row">
 
-            <div class="advantages-card">
+            <div class="advantages-card" data-aos="fade-up">
               <div class="advantages-card__icon">
 				        <?php ith_the_icon( 'check' ); ?>
               </div>
               <p>…При минимальных вмешательствах в организм методы биохакинга позволяют создать целостную «карту здоровья и рисков» для каждого конкретного пациента</p>
             </div>
 
-            <div class="advantages-card">
+            <div class="advantages-card" data-aos="fade-up">
               <div class="advantages-card__icon">
 				        <?php ith_the_icon( 'check' ); ?>
               </div>
               <p>…Затраты на проведение биохакинга окупаются многократно за счет снижения необходимого количества медикаментов и сокращения поводов для обращения к врачам</p>
             </div>
 
-            <div class="advantages-card">
+            <div class="advantages-card" data-aos="fade-up">
               <div class="advantages-card__icon">
 				        <?php ith_the_icon( 'check' ); ?>
               </div>
@@ -592,10 +708,6 @@ if ($news->have_posts()): ?>
         </div>
 
       </div>
-
-
-
-
 
     </div>
   </section>

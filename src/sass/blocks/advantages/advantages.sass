@@ -32,6 +32,8 @@
   padding: 60px 80px
   border: 3px solid $accent
   border-radius: 20px
+  background-color: #fff
+  color: $ebony-clay
   +r(1200)
     padding: 50px 60px
   +r(992)
@@ -67,21 +69,6 @@
       width: 40px
       height: 50px
       line-height: 50px
-    &::before
-      content: ''
-      position: absolute
-      top: 3px
-      right: 3px
-      bottom: 3px
-      left: 3px
-      z-index: -1
-      background-color: #101A2E
-      clip-path: polygon(50% 0, 100% calc(100% / 4), 100% calc(100% - (100% / 4)), 50% 100%, 0 calc(100% - (100% / 4)), 0 calc(100% / 4))
-      +r(767)
-        top: 2px
-        right: 2px
-        bottom: 2px
-        left: 2px
     svg
       width: 24px
       height: 17px
